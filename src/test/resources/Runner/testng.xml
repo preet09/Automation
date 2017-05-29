@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MSN">
+
+
+
+<listeners>
+<listener class-name="listeners.CustomListeners"/>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+ <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+ <test name="Verify Homepage">
+    <classes>
+      <class name="testcases.VerifyHomepage">
+      <methods>
+        <include name="Verify_Header"/>
+      </methods>
+      </class>
+    </classes>  
+ </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

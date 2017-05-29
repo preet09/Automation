@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Minecraft]">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+  </listeners>
+  <test name="Verify Homepage(failed)">
+    <groups>
+      <run>
+        <include name="high"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.VerifyHomepage">
+        <methods>
+          <include name="Verify_Header"/>
+        </methods>
+      </class> <!-- testcases.VerifyHomepage -->
+    </classes>
+  </test> <!-- Verify Homepage(failed) -->
+</suite> <!-- Failed suite [Minecraft] -->

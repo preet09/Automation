@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MSN]">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Verify Homepage(failed)">
+    <classes>
+      <class name="testcases.VerifyHomepage">
+        <methods>
+          <include name="Verify_Header"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.VerifyHomepage -->
+    </classes>
+  </test> <!-- Verify Homepage(failed) -->
+</suite> <!-- Failed suite [MSN] -->
