@@ -10,7 +10,7 @@
     <classes>
       <class name="testcases.VerifyHomepage">
         <methods>
-          <include name="Verify_Header"/>
+          <include name="Search"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>

@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="MSN" duration-ms="221870" started-at="2017-05-26T11:50:24Z" finished-at="2017-05-26T11:54:06Z">
+  <suite name="MSN" duration-ms="36372" started-at="2017-06-02T11:11:47Z" finished-at="2017-06-02T11:12:23Z">
     <groups>
     </groups>
-    <test name="Verify Homepage" duration-ms="221870" started-at="2017-05-26T11:50:24Z" finished-at="2017-05-26T11:54:06Z">
+    <test name="Default test" duration-ms="36372" started-at="2017-06-02T11:11:47Z" finished-at="2017-06-02T11:12:23Z">
       <class name="testcases.VerifyHomepage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@3d99d22e]" name="setup" is-config="true" duration-ms="206356" started-at="2017-05-26T17:20:24Z" finished-at="2017-05-26T17:23:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@6e6c3152]" name="setup" is-config="true" duration-ms="7063" started-at="2017-06-02T16:41:47Z" finished-at="2017-06-02T16:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_Header()[pri:0, instance:testcases.VerifyHomepage@3d99d22e]" name="Verify_Header" duration-ms="15439" started-at="2017-05-26T17:23:50Z" finished-at="2017-05-26T17:24:06Z">
+        <test-method status="PASS" signature="Search()[pri:0, instance:testcases.VerifyHomepage@6e6c3152]" name="Search" duration-ms="13804" started-at="2017-06-02T16:41:54Z" finished-at="2017-06-02T16:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@6e6c3152]" name="teardown" is-config="true" duration-ms="139" started-at="2017-06-02T16:42:08Z" finished-at="2017-06-02T16:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.VerifyHomepage.Search() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@6e6c3152]" name="setup" is-config="true" duration-ms="6037" started-at="2017-06-02T16:42:08Z" finished-at="2017-06-02T16:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verify_Header()[pri:0, instance:testcases.VerifyHomepage@6e6c3152]" name="Verify_Header" duration-ms="9263" started-at="2017-06-02T16:42:14Z" finished-at="2017-06-02T16:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Header -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@3d99d22e]" name="teardown" is-config="true" duration-ms="49" started-at="2017-05-26T17:24:06Z" finished-at="2017-05-26T17:24:06Z">
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@6e6c3152]" name="teardown" is-config="true" duration-ms="34" started-at="2017-06-02T16:42:23Z" finished-at="2017-06-02T16:42:23Z">
           <params>
             <param index="0">
               <value>
@@ -27,6 +46,6 @@
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.VerifyHomepage -->
-    </test> <!-- Verify Homepage -->
+    </test> <!-- Default test -->
   </suite> <!-- MSN -->
 </testng-results>

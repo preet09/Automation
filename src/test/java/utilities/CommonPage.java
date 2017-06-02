@@ -55,10 +55,51 @@ public class CommonPage
          //  Verify Items
          isresult = oAction.IsObjectPresent(By.xpath("//header[@id='header-common']/h1/a[1]"), "MSN logo");
          status.add(isresult);
+         
+         isresult = oAction.OnHover(By.xpath("//*[@id='header-common']/h1/a[1]")," Refresh page");
+         status.add(isresult);
+         
+         isresult = oAction.MatchText(By.xpath("//*[@id='header-common']/h1/a[1]/span"), "refresh page");
+         status.add(isresult);
+         
+         
+     
          }
          return status.contains(false) ? false : true;
+    }        
+	
+	public boolean Search() throws IOException
+	{
+		boolean isresult;
+		String userurl = PropertyReader.GetValue("homepageurl");
+		isresult = oAction.NavigateToURL(userurl, "MSN page");
+		LoggerReport.log.debug("Navigated to msn site");
+		List<Boolean> status = new ArrayList<Boolean>();
+        
+		if(isresult)
+		{
+			
+		isresult=oAction.EnterData(By.xpath("//*[@id='q']"),"P", "Searchbox");
+		status.add(isresult);
+		
+		isresult=oAction.WaitForObject(By.xpath("//ul[@id='sa_ul']//li"), "List");
+		status.add(isresult);
+		
+		isresult=oAction.VerifyElementsCountNotNull(By.xpath("//ul[@id='sa_ul']//li"),"SearchList");
+		status.add(isresult);
+		
+		isresult=oAction.Click(By.xpath("//*[@id='srchfrm']/div[2]/button[1]"),"Searchbutton");
+		status.add(isresult);
+
+		isresult=oAction.NavigateToNewTab("Bing page");
+		status.add(isresult);
+		
+		isresult=oAction.IsObjectPresent(By.xpath("//*[@id='b_header']"),"Bing Header");
+		status.add(isresult);    
+		}
+         return status.contains(false) ? false : true;
          
-	  
+  
     }        
 
 	

@@ -48,6 +48,12 @@ public class VerifyHomepage
 	    Assert.assertTrue(OverallStatus,BrowserAction.ErrorMessages.toString());
 	}
 	
+	@Test
+	public void Search() throws IOException
+	{
+		OverallStatus=pageCommon.Search();
+	    Assert.assertTrue(OverallStatus,BrowserAction.ErrorMessages.toString());
+	}
 	
 	@AfterMethod
 	public void teardown(Method testmethod) throws IOException

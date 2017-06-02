@@ -16,6 +16,9 @@
       <methods>
         <include name="Verify_Header"/>
       </methods>
+      <methods>
+        <include name="Search"/>
+      </methods>
       </class>
     </classes>  
  </test> <!-- Test -->
