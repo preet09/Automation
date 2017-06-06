@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -51,6 +52,9 @@ public class BrowserAction extends Page
     			ErrorMessages.append("Browser not defined in current browser "+browser);
     			return false;
     		}
+    		
+    		driver.manage().window().maximize();
+    		driver.manage().timeouts().implicitlyWait(10L,TimeUnit.SECONDS);
     		
     		return true;
     	}
@@ -315,6 +319,43 @@ public boolean NavigateToURL(String url,String logicalname)
 		 }
 		 return isresult;	
 		}
+	 
+	  public boolean MatchText(By by, String expected, String logicalname)
+      {
+		  boolean isresult=false;
+			 
+			 try
+			{
+				String actual=driver.findElement(by).getText();
+				if(actual.equalsIgnoreCase(expected))
+				{
+					isresult=true;
+				}
+				else
+				{
+			    isresult=false;
+				ErrorMessages.append("Actual: "+actual+" and expected: "+expected+" values don't match");
+				}
+				
+			}
+			 
+			 catch(NoSuchElementException e)
+			 {
+				 isresult=false;
+				 ErrorMessages.append("Element Not Found "+logicalname);
+				 ErrorMessages.append(e.getMessage());
+				 
+			 }
+			 catch(Exception e)
+			 {
+				 isresult=false;
+				 ErrorMessages.append("Text could not be verified for object "+logicalname);
+				 ErrorMessages.append(e.getMessage());
+				 
+			 }
+			 return isresult;	
+      }
+      
 	 
 	 
 	 public boolean CleanUp() 

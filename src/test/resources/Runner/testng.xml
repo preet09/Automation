@@ -17,6 +17,9 @@
         <include name="Verify_Header"/>
       </methods>
       <methods>
+        <include name="Verify_SignIn"/>
+      </methods>
+      <methods>
         <include name="Search"/>
       </methods>
       </class>

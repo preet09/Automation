@@ -49,6 +49,13 @@ public class VerifyHomepage
 	}
 	
 	@Test
+	public void Verify_SignIn() throws IOException
+	{
+		OverallStatus=pageCommon.Verify_SignIn();
+	    Assert.assertTrue(OverallStatus,BrowserAction.ErrorMessages.toString());
+	}
+	
+	@Test
 	public void Search() throws IOException
 	{
 		OverallStatus=pageCommon.Search();

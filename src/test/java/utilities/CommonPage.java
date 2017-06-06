@@ -101,7 +101,47 @@ public class CommonPage
          
   
     }        
+	
+	
+	public boolean Verify_SignIn() throws IOException
+	{
+		boolean isresult;
+		String userurl = PropertyReader.GetValue("homepageurl");
+		isresult = oAction.NavigateToURL(userurl, "MSN page");
+		LoggerReport.log.debug("Navigated to msn site");
+		List<Boolean> status = new ArrayList<Boolean>();
+        
+		if(isresult)
+		{
+			
+		isresult=oAction.Click(By.xpath("//*[@id='meCtrl']/a"), "SignIn Button");
+		status.add(isresult);
+		
+		isresult=oAction.EnterData(By.xpath("//*[@id='i0116']"), "preetkamal387@outlook.com", "Email ID");
+		
+		isresult=oAction.Click(By.xpath("//*[@id='idSIButton9']"), "Next button");
+		status.add(isresult);
+		
+		isresult=oAction.WaitForObject(By.xpath("//*[@id='i0118']"), "Password Section");
+		status.add(isresult);
 
+		isresult=oAction.EnterData(By.xpath("//*[@id='i0118']"), "september09*", "Password Entered");
+		status.add(isresult);
+		
+		isresult=oAction.Click(By.xpath("//*[@id='idSIButton9']"),"Sign In Button");
+		status.add(isresult); 
+		
+		isresult=oAction.MatchText(By.xpath("//*[@id='meCtrl']/div/div[1]"), "preet", "Username");
+		status.add(isresult);    
+		
+		}
+         return status.contains(false) ? false : true;
+         
+  
+    }        
+
+
+	
 	
 	
 	public void TakeScreenshot(String testcasename)

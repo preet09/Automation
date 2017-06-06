@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Default test"
-           tests="2"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="23.067">
+           time="20.929">
   <properties />
   
   
-            <testcase name="Search" time="13.804" classname="testcases.VerifyHomepage" />
-                <testcase name="Verify_Header" time="9.263" classname="testcases.VerifyHomepage" />
+            <testcase name="Verify_SignIn" time="20.929" classname="testcases.VerifyHomepage" />
       
 </testsuite>

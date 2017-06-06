@@ -6,15 +6,15 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Verify Homepage(failed)">
+  <test name="Default test(failed)">
     <classes>
       <class name="testcases.VerifyHomepage">
         <methods>
-          <include name="Search"/>
+          <include name="Verify_SignIn"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.VerifyHomepage -->
     </classes>
-  </test> <!-- Verify Homepage(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [MSN] -->
