@@ -29,7 +29,7 @@ public class GetScreenshot
 		public static void Screenshotelement(By by,String path) throws IOException
 		{
 			
-			WebElement ele =BrowserAction. driver.findElement(By.xpath("//div[@id='container']//div[@class='_218svP']"));
+			WebElement ele =BrowserAction.driver.findElement(By.xpath("//div[@id='container']//div[@class='_218svP']"));
 			BufferedImage  fullImg = ImageIO.read(screenshot);
 
 			// Get the location of element on the page

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Default test"
-           tests="1"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="20.929">
+           time="52.267">
   <properties />
   
   
-            <testcase name="Verify_SignIn" time="20.929" classname="testcases.VerifyHomepage" />
+            <testcase name="Verify_Settings" time="13.087" classname="testcases.VerifyHomepage" />
+                <testcase name="Verify_Header" time="7.756" classname="testcases.VerifyHomepage" />
+                <testcase name="Search" time="11.621" classname="testcases.VerifyHomepage" />
+                <testcase name="Verify_SignIn" time="19.803" classname="testcases.VerifyHomepage" />
       
 </testsuite>

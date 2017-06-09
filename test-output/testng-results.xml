@@ -1,21 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="MSN" duration-ms="27071" started-at="2017-06-06T09:37:05Z" finished-at="2017-06-06T09:37:32Z">
+  <suite name="MSN" duration-ms="83309" started-at="2017-06-09T12:12:07Z" finished-at="2017-06-09T12:13:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27071" started-at="2017-06-06T09:37:05Z" finished-at="2017-06-06T09:37:32Z">
+    <test name="Default test" duration-ms="83309" started-at="2017-06-09T12:12:07Z" finished-at="2017-06-09T12:13:30Z">
       <class name="testcases.VerifyHomepage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@3d99d22e]" name="setup" is-config="true" duration-ms="6066" started-at="2017-06-06T15:07:05Z" finished-at="2017-06-06T15:07:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="setup" is-config="true" duration-ms="6344" started-at="2017-06-09T17:42:07Z" finished-at="2017-06-09T17:42:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_SignIn()[pri:0, instance:testcases.VerifyHomepage@3d99d22e]" name="Verify_SignIn" duration-ms="20929" started-at="2017-06-06T15:07:11Z" finished-at="2017-06-06T15:07:32Z">
+        <test-method status="PASS" signature="Search()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="Search" duration-ms="11621" started-at="2017-06-09T17:42:13Z" finished-at="2017-06-09T17:42:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="teardown" is-config="true" duration-ms="1784" started-at="2017-06-09T17:42:25Z" finished-at="2017-06-09T17:42:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.VerifyHomepage.Search() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="setup" is-config="true" duration-ms="5495" started-at="2017-06-09T17:42:27Z" finished-at="2017-06-09T17:42:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verify_Header()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="Verify_Header" duration-ms="7756" started-at="2017-06-09T17:42:32Z" finished-at="2017-06-09T17:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Header -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="teardown" is-config="true" duration-ms="100" started-at="2017-06-09T17:42:40Z" finished-at="2017-06-09T17:42:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.VerifyHomepage.Verify_Header() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="setup" is-config="true" duration-ms="5646" started-at="2017-06-09T17:42:40Z" finished-at="2017-06-09T17:42:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verify_Settings()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="Verify_Settings" duration-ms="13087" started-at="2017-06-09T17:42:46Z" finished-at="2017-06-09T17:42:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Settings -->
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="teardown" is-config="true" duration-ms="5146" started-at="2017-06-09T17:42:59Z" finished-at="2017-06-09T17:43:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.VerifyHomepage.Verify_Settings() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="setup" is-config="true" duration-ms="6425" started-at="2017-06-09T17:43:04Z" finished-at="2017-06-09T17:43:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verify_SignIn()[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="Verify_SignIn" duration-ms="19803" started-at="2017-06-09T17:43:10Z" finished-at="2017-06-09T17:43:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_SignIn -->
-        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@3d99d22e]" name="teardown" is-config="true" duration-ms="50" started-at="2017-06-06T15:07:32Z" finished-at="2017-06-06T15:07:32Z">
+        <test-method status="PASS" signature="teardown(java.lang.reflect.Method)[pri:0, instance:testcases.VerifyHomepage@68bbe345]" name="teardown" is-config="true" duration-ms="59" started-at="2017-06-09T17:43:30Z" finished-at="2017-06-09T17:43:30Z">
           <params>
             <param index="0">
               <value>

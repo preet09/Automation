@@ -10,9 +10,9 @@
     <classes>
       <class name="testcases.VerifyHomepage">
         <methods>
-          <include name="Verify_SignIn"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="Verify_Settings"/>
         </methods>
       </class> <!-- testcases.VerifyHomepage -->
     </classes>

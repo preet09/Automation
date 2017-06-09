@@ -62,6 +62,13 @@ public class VerifyHomepage
 	    Assert.assertTrue(OverallStatus,BrowserAction.ErrorMessages.toString());
 	}
 	
+	@Test
+	public void Verify_Settings() throws IOException
+	{
+		OverallStatus=pageCommon.Verify_Settings();
+	    Assert.assertTrue(OverallStatus,BrowserAction.ErrorMessages.toString());
+	}
+	
 	@AfterMethod
 	public void teardown(Method testmethod) throws IOException
 	{
@@ -73,7 +80,6 @@ public class VerifyHomepage
         if (!OverallStatus)
            GetScreenshot.Screenshotpage(System.getProperty("user.dir")+"\\src\\test\\java\\screenshots\\sample.jpeg");
         LoggerReport.FinaliseReport(OverallStatus, testname, StartTime, EndTime);
-        pageCommon.TestCleanUp();
-		
+        pageCommon.TestCleanUp();	
 	}
 }

@@ -141,6 +141,40 @@ public class CommonPage
     }        
 
 
+	public boolean Verify_Settings() throws IOException
+	{
+		boolean isresult;
+		String userurl = PropertyReader.GetValue("homepageurl");
+		isresult = oAction.NavigateToURL(userurl, "MSN page");
+		LoggerReport.log.debug("Navigated to msn site");
+		List<Boolean> status = new ArrayList<Boolean>();
+        
+		if(isresult)
+		{
+			
+		isresult=oAction.Click(By.xpath("//*[@id='settings']"), "Settings");
+		status.add(isresult);
+		
+		isresult=oAction.VerifyElementsInDropDown(By.xpath("//*[@id='site-market']"),"DropDown List");
+		status.add(isresult);
+		
+		isresult=oAction.SelectDropDown(By.xpath("//*[@id='site-market']"), "Argentina (español)", "LanguageSelector",false);
+		status.add(isresult);
+		
+		isresult=oAction.WaitForPageToLoad(10, "Market page");
+		status.add(isresult);
+		
+		isresult=oAction.MatchCurrentWindowUrl("http://www.msn.com/es-ar", "Argentinalocale Url");
+		status.add(isresult);
+		
+		isresult=oAction.NavigateToURL(userurl,"Homepage");
+		status.add(isresult);  
+		
+		}
+         return status.contains(false) ? false : true;
+         
+  
+    }        
 	
 	
 	
